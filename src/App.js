@@ -12,12 +12,14 @@ function App(){
     function isHard(){
         setHard(hard+1);
     }
+
     return(
         <div>
-            <button onClick= {isNormal}>Normal</button>
-            <button onClick = {isHard}>Hard</button>
-            {normal ? <Normal /> : <Rule/>}
-            {hard ? <Hard /> : ""}
+            <h1>Difficulty</h1>
+            <div><button onClick={()=>{window.location.href="https://project2-normal.web.app/"}}>Normal</button></div>
+            <div><button onClick ={()=>{window.location.href="https://project2-hard.web.app/"}}>Hard</button></div>
+            <h1>Rule</h1>
+            <button onClick={()=>{window.location.href="https://project2-rule.web.app/"}}>Rule</button>
         </div>
         
     );     
